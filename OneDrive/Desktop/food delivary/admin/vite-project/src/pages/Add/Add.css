@@ -1,0 +1,120 @@
+/* -------- ADD PAGE CONTAINER -------- */
+
+.add {
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+
+/* -------- FORM CARD -------- */
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+/* -------- IMAGE UPLOAD -------- */
+
+.add-image-upload  img{
+    width:120px;
+}
+
+.add-image-upload label {
+    cursor: pointer;
+}
+
+
+
+/* -------- INPUT FIELDS -------- */
+
+
+ .add-product-name,.add-product-description {
+
+    width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-family: Outfit;
+    font-size: 14px;
+    
+}
+
+/* focus effect */
+.add-product-name input:focus,
+.add-product-description textarea:focus,
+.add-category-price input:focus,
+.add-category-price select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* -------- CATEGORY + PRICE -------- */
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.add-category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-category-price select,
+.add-category-price input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    max-width: 200px;
+    font-family: Outfit;
+    font-size: 14px;
+}
+
+/* -------- BUTTON -------- */
+
+.add-btn {
+    max-width: 120px ;
+    border: none ;
+    padding:10px ;
+    background-color:black ;
+    color: white ;
+    cursor: pointer ;
+}
+
+.add-btn:hover {
+    background: #1d4ed8;
+}
+
+/* -------- RESPONSIVE -------- */
+
+@media (max-width: 768px) {
+    .add {
+        width: 90%;
+    }
+
+    .add-category-price {
+        flex-direction: column;
+    }
+
+    .add-category-price select,
+    .add-category-price input {
+        max-width: 100%;
+    }
+}
